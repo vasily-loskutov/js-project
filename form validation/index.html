@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Falid Form</title>
+  </head>
+  <body>
+    <div class="page">
+      <form class="js-form" action="" novalidate >
+          <div class="form__group">
+              <input type="text" class="input js-input" name="name" placeholder="Name"  >
+          </div>
+          <div class="form__group">
+              <input type="text" class="input js-input" name="last name" placeholder="Last name"  >
+          </div>
+          <div class="form__group">
+              <input type="email" class="input js-input js-input-email" name="email" placeholder="Email"  >
+          </div>
+          <div class="form__group">
+              <input type="tel" class="input js-input js-input-phone" name="phone" placeholder="Телефон" >
+          </div>
+          <div class="form__group">
+              <input type="checkbox" class="checkbox__input js-input-checkbox" id="privacy_check">
+              <label class="checkbox__label" for="privacy_check">Accept privacy policy</label>
+          </div>
+          <button class="btn" type="submit">
+              Submit form
+          </button>
+      </form>
+ 
+  </div>
+    <script src="./just-validate.min.js"></script>
+    <script src="./inputmask.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

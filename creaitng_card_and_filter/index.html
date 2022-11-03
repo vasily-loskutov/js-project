@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+  
+    <title>creaitng_card_and_filter01</title>
+</head>
+<body>
+        <div class="header">
+            <div class="container">
+                <form action="" class="form" id="form1" >
+                    <input type="text" name="URL"  id="XXX"class=" input input__URL" placeholder="Вставте ссылку на картинку">
+                    <input type="text" name="title" id="XXX" class="input input__title" placeholder=" заголовок товара">
+                    <input type="text" name="desk" id="XXX" class=" input input__desk" placeholder=" описание товара">
+                    <input type="number" name="raiting" id="XXX" min="0" max="10" class=" input  number-input input__raiting" placeholder=" рейтинг товара от 0 до 10">
+                    <input type="number" name="price" id="XXX" min="0" max="10000" class=" input  number-input input__price" placeholder="цена товара от 0 до 999999">
+                
+                    <div class="block-button">
+                        <button type="submit">Create Card</button>
+                    
+                        <button id="DeleteAllBtn">DeleteAll Cards</button>
+                    </div>
+                    </form>
+                <div class="filter__btn">
+                    <button data-name="PopularityUp">Сначала популяные</button>
+                    <button data-name="PopularityDown">Сначала непопуляные</button>
+                    <button data-name="PriceUp">Сначала дорогие</button>
+                    <button data-name="PriceDown">Сначала дешевые</button>
+                </div>
+                <div class="slider">
+                  
+                        <div class="filter__slider" id="range-slider"></div>
+                  
+                <div class="wrap">
+                    <input type="text" id="PriceStart" class="sliders__input" placeholder="От">
+                    <input type="text" id="PriceEnd" class="sliders__input" placeholder="До">
+                </div>
+                </div>
+            </div>
+            <main class="cards">
+                 <div class="container-grid">
+             
+   
+            </div>
+            </main>
+        </div>
+       
+    <script src="./main.js"></script>
+</body>
+</html>
